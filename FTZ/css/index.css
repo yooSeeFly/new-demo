@@ -1,0 +1,552 @@
+	
+	.background .rightBtn{
+		width:50px;
+		height:50px;
+		background:rgb(13,74,108);
+		line-height:50px;
+		font-size:1.8em;
+		font-weight:bold;
+		color:#fff;
+		text-align:center;
+		/*border:2px solid yellow;*/
+		position:absolute;
+		/*top:47%;*/
+		/*left:18.5%*/
+		top:47%;		
+		/*left:355px;*/
+		left:20%;
+
+	}
+	.rightBtn:hover{
+		
+		background:rgba(206,231,255,0.1);
+		box-shadow:0px 0px 6px #e1e1e1;
+	}
+	/*.rlBtn{
+		display:none;
+	}*/
+	.leftBtn{
+		
+		background:transparent;
+		line-height:50px;
+		font-size:1.8em;
+		font-weight:bold;
+		color:#fff;
+		text-align:center;
+		display:none;
+		position:absolute;
+		top:47%;
+		left:0;
+		
+	}
+	.leftBtn:hover{
+		width:50px;
+		height:50px;
+		background:rgba(206,231,255,0.1);
+		box-shadow:0px 0px 6px #e1e1e1;
+	}
+	
+	/*除去头部和底部的身体区域*/
+	.pumpList{
+		width:18.2%;
+		height:100%;
+		min-width:188px;
+		min-height:756px;
+		/*border:1px solid red;*/
+		/*background:linear-gradient(-145deg,rgba(32,76,107,1),rgba(13,55,109,0.9));*/
+		background:rgba(22,68,110,0.7);
+		background-size:100% auto;
+		position:absolute;
+		top:0px;
+		left:0px;
+		/*display:none;*/
+		
+	}
+	/*时间轴模块*/
+	.background .Time{
+		width:15%;
+		height:85%;
+		min-height:500px;
+		min-width:240px;
+		position:absolute;
+		right:0px;
+		bottom:0px;
+		background:rgba(15,76,114,0.5);		 
+		margin-right:2px;
+		/*display:none;*/
+		
+	}
+	/*时间轴打开和关闭按钮*/
+	.background .timeLineOpen{
+		width:24px;
+		height:24px;
+		background:url(../img/time.png) no-repeat;
+		border-radius:50%;
+		position:absolute;
+		top:97%;
+		left:98%;
+		/*display:none;	*/
+	}
+	/*展开时间轴按钮的悬浮效果*/
+	.timeLineOpen:hover{
+		box-shadow:0 0 3px white;
+		background-color:rgba(70,142,195,0.6)
+	}
+	
+	.background .Time .timeLineBlock{
+		width:60%;
+		height:100%;
+		/*-webkit-filter:blur(1px);*/
+		border-left:0.2px solid rgb(77,132,159);/*实现时间轴上面的竖线*/
+		position:absolute;
+		left:40%;
+		overflow:visible;
+		font-family:"黑体";
+	}
+	.background .Time .timeLineBlock ul{
+		/*border:1px solid green;*/
+		width:85%;
+		height:90%;
+		min-width:170px;
+		position:absolute;
+		top:10%;
+		overflow:visible;
+		
+	}
+	.background .Time .timeLineBlock .timeContent li{
+		width:100%;
+		height:11%;
+		/*min-width:120px;*/
+		color:white;
+		font-size:0.9em;
+		overflow:visible;
+		position:relative;
+		/*border:1px solid red;*/
+	}
+	.Time .timeLineBlock .timeContent li i{
+		display:inline-block;
+		width:15px;
+		height:15px;
+		border-radius:50%;
+		background:rgb(92,191,230);
+		position:absolute;
+		left:-9px;
+	}
+	/*时间轴上每个时间点处的内容简介*/
+	.Time .timeLineBlock .timeContent li .timeDotContent{
+		margin-top:5px;
+		margin-left:20px;
+		
+	}
+	/*时间轴上每个时间点处的标题*/
+	.Time .timeLineBlock .timeContent li h4{
+		margin-left:20px;
+		
+	}
+	/*时间轴上时间点处时间描述*/
+	.Time .timeLineBlock .timeContent li .Date{
+		width:100px;
+		min-width:100px;
+		position:absolute;
+		top:2%;
+		left:-70%;
+		padding-right:10px;
+		/*border:1px solid red;*/
+	}
+	.Date  p{
+		
+		text-align:right;
+	}
+	/*时间轴设置 初步实现 是否是计时器性质*/
+	.pumpList .pumpListHeader{
+		width:100%;
+		height:3.5%;
+		background:RGB(15,51,76);
+	}
+	.pumpList .pumpListHeader .diagSetBtn{
+		/*width:6%;
+		height:60%;*/
+		width:16px;
+		height:16px;
+		float:right;
+		margin:2% 2%;
+		background:url(../img/setIcon.png) no-repeat;
+		background-position:2px 1px;
+		
+	}
+	.pumpList .pumpListFooter{
+		width:100%;
+		height:4.5%;
+		background:RGB(15,51,76);
+		position:absolute;
+		bottom:0px;
+		left:0px;
+	}
+
+	.pumpList .pumpListBody{
+		width:100%;
+		height:92%;
+		/*min-width:320px;*/
+		min-height:830px;
+		/*border:1px solid red;*/
+		position:relative;
+		
+	}
+	/*头像和用户名设置模块*/
+	.pumpList .pumpListBody .userDataSet{
+		width:100%;
+		height:12%;
+		min-height:110px;
+		background:rgb(22,68,110);
+		position:absolute;
+		top:0px;
+		left:0px;
+		vertical-align:top;
+		
+	}
+	.pumpList .pumpListBody .changePsd{
+		width:100%;
+		height:12%;
+		min-height:110px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		background:rgb(22,68,110);
+		/*vertical-align:top;*/
+		color:rgb(143,186,223);
+		font-size:0.8em;
+		padding-left:15px;
+		display:none;
+	}
+	.changePsd label{
+		
+		display:inline-block;
+		height:24px;
+		line-height:24px;
+		vertical-align:middle;
+		margin-top:12px;
+		font-size:1.1em;
+	}
+	.psd{
+		border:1px solid rgb(45,88,120);
+		width:160px;
+		height:24px;
+		vertical-align:middle;
+		margin-top:12px;
+		background:rgb(9,58,92);
+		border-radius:3px;
+		margin-left:10px;
+		color:white;
+		font-size:2em;
+	}
+	.psd:focus{
+		border:1px solid rgb(183,186,215);
+	}
+	.pumpList .pumpListBody .changePsd .btn{
+		width:55px;
+		height:89px;
+		border:none;
+		position:relative;
+		top:-70%;
+		left:76%;
+		color:#fff;
+		
+	}
+	.btn .ack{
+		width:100%;
+		height:32px;
+		text-align:center;
+		line-height:35px;
+		border:none;
+		/*background:rgb(122,174,37);*/
+		background:rgb(76,182,249);
+		margin-bottom:10px;
+		color:white;
+		
+		cursor:pointer;
+	}
+	.btn .ack:hover{
+		background:rgba(76,182,249,0.6);
+		box-shadow:0 0 3px #86c2ff;
+	}
+	.btn .cancel{
+		width:100%;
+		height:32px;
+		text-align:center;
+		line-height:35px;
+		background:rgb(9,58,93);
+		cursor:pointer;
+	}
+	.btn .cancel:hover{
+		background:rgba(9,58,93,0.6);
+		box-shadow:0 0 5px #00486a;
+	}
+	:focus{
+		outline:none;
+	}
+	/*用户头像设置*/
+	.pumpList .pumpListBody .userDataSet .userPicture{
+		width:21%;
+		height:61.5%;
+		min-width:70px;
+		min-height:64px;
+		/*background:#ff6633;*/
+		border:1px solid black;
+		border-radius:50%;
+		position:relative;
+		margin-top:7%;
+		margin-left:5%;
+		display:inline-block;
+	}
+	/*用户名设置*/
+	.pumpList .pumpListBody .userDataSet .userName{
+		position:absolute;
+		top:10%;
+		/*left:30%;*/
+		left:40%;
+		margin-top:4%;
+	}
+	/*设置用户信息部分修改密码和退出项*/
+	.userDataSet p{
+		position:relative;
+		top:-25%;
+		/*left:30%;*/
+		left:40%;
+		
+	}
+	/*选择p元素下的第一个span标签设置右边框*/
+	p>span:first-child{
+		border-right:1px solid rgb(108,154,192);
+		
+	}
+	.userData:hover{
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	p>a{
+		text-decoration:none;
+	}
+	.userData{
+		color:rgb(108,154,192);
+		font-size:0.8em;
+		padding:0px 3%;
+	}
+	/*搜索框模块*/
+	.search{
+		width:98%;
+		height:4%;
+		/*min-width:320px;*/
+		/*background:RGB(11,72,116);*/
+		background:rgb(9,58,93);
+		border-radius:5px;
+		position:relative;
+		margin:3px;
+		top:12%;
+		left:0;
+		font-family:"黑体";
+		/*font-size:1em;*/
+		/*border:1px solid yellow;*/
+		/*overflow:visible;*/
+	}
+	/*下拉列表*/
+	/*.pumpList .pumpListBody .search .select{
+		display:inline-block;
+		width:21%;
+		height:95%;
+		background:rgb(8,49,77);  
+		border:none;
+		text-align:center;
+		padding-top:8px;
+		color:rgb(76,182,254);
+		float:left;
+		font-size:0.9em;
+		overflow:visible;
+	}
+	.pumpList .pumpListBody .search .defaultContainer{
+		margin-left:7px;
+	}*/
+	/*三角图标实现*/
+	/*.pumpList .pumpListBody .search .triangle{
+		border-left: 5px solid transparent ;
+		border-right: 5px solid transparent;
+		border-top: 10px solid rgb(27,107,161);
+		
+		position:relative;
+		top:3px;
+		left:-3px;
+		float:right;	
+	}*/
+	/*泵房列表搜索框*/
+	.pumpList .pumpListBody .search #searchPumpList{
+		display:inline-block;
+		width:18%;
+		min-width:58px;
+		height:100%;
+		background:rgb(8,49,77);
+		color:rgb(27,107,161);
+		border:none;
+		border-top-left-radius:3px;
+		border-bottom-left-radius:3px;
+		padding-left:10px;
+		/*position:absolute;
+		top:100%;
+		left:0;*/
+		/*z-index:1;*/
+		/*display:none;*/
+	}
+	
+	/*.pumpList .pumpListBody .search .dropDownMenu li:hover{
+		background:lightsteelblue;
+		font-size:1.1em;
+	}*/
+	.searchDiag{
+		width:70%;
+		/*min-width:250px;*/
+		height:95%;
+		background:rgb(9,58,93);
+		/*background:rgb(11,72,116);*/
+		color:rgb(76,182,254);
+		/*font-family:"黑体";
+		font-size:0.8em;
+		padding-left: 5px;*/
+		border:none;
+	}
+	.searchBtn{
+		width:22px;
+		height:18px;	
+		/*background-color:transparent;*/
+		background:url(../img/searchBtn.png) no-repeat;
+		float:right;	
+		margin:8px;	
+		position:absolute;
+		right:0px;
+		top:0px;
+	}
+	.onlineStatus{
+		position:relative;
+		height:5%;
+		width:100%;
+		top:12%;
+		border-bottom:1px solid rgb(36,96,143);	
+	}
+	.onlineStatus ul{
+		height:100%;
+		min-width:188px;
+		padding-left:10px;
+	
+	}
+	/*.onlineStatus ul>li:first-child{
+		
+	}*/
+	.onlineStatus ul li{
+		/*width:28%;*/
+		/*min-width:100px;*/
+		display:inline-block;
+		float:left;
+		font-size:0.7em;
+		font-family:"宋体";
+		color:rgb(143,186,223);
+		position:relative;
+		top:25%; 
+		
+	}
+ @media  screen and (max-width: 1360px) {
+ 	.onlineStatus ul li{
+ 		width:28%;
+ 		
+ 	}
+ }
+	.status{
+		display:inline-block;
+		width:12px;
+		height:12px;
+		background:rgb(76,182,249);/* 蓝色 在线泵数量未被点击时默认显示全部*/
+		/*background:rgb(255,77,77);*//*在线泵数量未被点击时默认显示全部*/
+		border-radius:50%;
+		margin-right:5px;
+	}
+	.green{
+		background:#d4d4d4;
+	}
+	.pink{	
+		background:#d4d4d4;
+	}
+	.green:hover{
+		background:rgba(129,183,41,0.7);
+		box-shadow:0px 0px 0.5px white;
+	}
+	.pink:hover{
+		background:rgba(160,160,160,0.7);
+		box-shadow:0px 0px 0.5px white;
+	}
+	.blue:hover{
+		background:rgba(76,182,249,0.7);
+		box-shadow:0px 0px 0.5px white;
+	}
+	
+	
+	/*泵房列表*/
+	.List{
+		position:relative;
+		width:100%;
+		height:70%;
+		top:12%;
+		overflow-y:scroll;
+		/*border:1px solid yellow;*/
+	}
+	
+	
+	/*设置滚动条宽度*/
+	::-webkit-scrollbar{
+		width:4px;
+	}
+	/*滚动条滑轨背景颜色*/
+	::-webkit-scrollbar-track{
+		background-color:rgb(7,38,55);
+	}
+	/*滚动条滑块颜色*/
+	::-webkit-scrollbar-thumb{
+		background-color:rgb(70,142,195);
+	}
+	.List ul li {
+		height:20%;
+		padding:4% 0;
+		padding-left:15%;
+		color:rgb(76,182,254);
+		font-size:0.8em;
+		font-family:"宋体";
+		font-weight:bold;
+		border-top:1.5px solid rgb(11,55,89);
+		border-bottom:1.5px solid rgb(36,96,143);
+		display:block;	
+	}
+	
+	.List ul .offline i{
+		background-position:-40px 0px;
+	}
+	.List ul .warning i{
+		background-position:-80px 0px;
+	}
+	h4{
+		display:inline-block;
+		font-size:1.1em;
+	}
+	.List ul li span{
+		color:rgb(44,132,191);
+		font-weight:normal;
+		font-size:1em;
+		float:right;
+		margin-right:12%;
+		margin-top:2px;	
+	}
+	.listItem i{
+		display:inline-block;
+		width:18px;
+		height:18px;
+		background-size:100%;
+		background:url(../img/bladeIcon.png) no-repeat;
+		margin-right:5px;
+		position:relative;
+		top:3px;
+	}
+	

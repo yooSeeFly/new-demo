@@ -1,0 +1,20 @@
+.header ul .fun {
+		background:url(../img/BlueIcon.png) no-repeat;
+		background-size:100%;
+	}
+	/*远程控制模块 对应导航栏背景为绿色*/
+	.header ul .fun_1 {
+		background:url(../img/GreenIcon.png) no-repeat;
+		background-size:100%;
+	}
+	.background .remoteControl{
+		width:100%;
+		height:75%;
+		background:url(../img/remoteControl1.png) no-repeat;
+		background-size:100%;
+		/*border:1px solid red;*/
+		position:absolute;
+		top:18%;
+		left:0px;
+		
+	}

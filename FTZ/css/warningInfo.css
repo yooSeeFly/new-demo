@@ -1,0 +1,333 @@
+
+.header ul .fun {
+		background:url(../img/BlueIcon.png) no-repeat;
+		background-size:100%;
+	}
+	/*报警信息模块 对应导航栏背景变为绿色*/
+	.header ul .fun_3 {
+		background:url(../img/GreenIcon.png) no-repeat;
+		background-size:100%;
+	}
+.background .warningInfo{
+	/*width:97%;
+	height:89.5%;*/
+	/*border:1px solid red;*/
+	width:88%;
+	height:85.5%;	
+	position:relative;
+	top:13%;
+	left:8%;
+}
+
+/*主体部分的头部*/
+.background .warningInfo .wHeader{
+	width:100%;
+	height:9.7%;
+	/*border:1px solid green;*/
+	background:url(../img/warning1.png) no-repeat;
+	background-size:100%;
+	
+}
+
+.background .warningInfo .wHeader  .wTime{
+	display:inline-block;
+	width:32%;
+	height:52%;	
+	vertical-align:middle;
+	position:relative;
+	top:23%;
+	left:40%;
+}
+.wTime .startEndTime{
+	display:inline-block;
+	width:40%;
+	height:100%;
+	border:1.5px solid rgb(15,105,149);
+	text-align:center;
+	vertical-align:middle;
+	line-height:2.2em;
+	color:rgb(66,135,194);
+	font-size:14px;
+	background-color:rgba(14,78,118,0.7);
+	
+}
+/*输入框提示信息*/
+::-webkit-input-placeholder{
+	color:rgb(66,135,194);
+	font-size:14px;
+}
+.wTime .to{
+	color:rgb(35,132,183);
+	font-size:1.2em;
+	vertical-align:middle;
+	
+}
+
+.wHeader .wSearch{
+	display:inline-block;
+	width:12%;
+	height:52%;
+	border:1.5px solid rgba(15,105,149,0.7);
+/*	background-color:rgba(14,78,118,0.7);*/
+	background:rgb(12,70,112);
+	color:rgb(66,135,194);
+	vertical-align:middle;
+	position:relative;
+	top:23%;
+	left:49%;
+	
+}
+.wHeader .wSearch i{
+	display:inline-block;
+	width:16%;
+	height:100%;
+	background:url(../img/searchBtn.png) no-repeat;
+	background-size:88%;
+	background-position:4px 50%;
+	
+	float:left;
+}
+.wHeader .wSearch .wSearchText{
+	width:81%;
+	height:100%;
+	/*background:rgb(12,70,112);*/
+	background:none;
+	border:none;
+	/*float:left;*/
+	color:#fff;
+	font-size:1em;
+	margin-left:6px;
+}
+/*搜索按钮*/
+.wHeader .wSearchBtn{
+	display:inline-block;
+	width:5%;
+	height:54%;
+	/*vertical-align:middle;*/
+	background:url(../img/warningSearchBtn.png) no-repeat;
+	background-size:100%;
+	color:#fff;
+	text-align:center;
+	line-height:2.8em;
+	vertical-align: middle;
+	float:right;
+	position:relative;
+	top:22%;
+	left:-1%;
+	
+}
+.warningInfo .rhText{
+	width:12%;
+	height:5%;
+	display:inline-block;
+	background:url(../img/wIcon2.png) no-repeat;
+	background-size:100%;
+	color:#fff;
+	font-size:1.2em;
+	text-align:center;
+	line-height:2em;
+}
+.warningInfo .realTimeText{
+	/*width:12%;
+	height:5%;
+	display:inline-block;*/
+	/*background:url(../img/wIcon2.png) no-repeat;
+	background-size:100%;*/
+	position:absolute;
+	top:7.1%;
+	left:13.7%;
+	/*color:#fff;
+	font-size:1.2em;
+	text-align:center;
+	line-height:2em;*/
+}
+
+.warningInfo .history{
+	
+	position:absolute;
+	top:7.1%;
+	left:69.8%;
+}
+.warningInfo i.wIcon3{
+	width:12px;
+	height:20px;
+	display:inline-block;
+	position:absolute;
+	top:51%;
+	left:48.7%;
+	background:url(../img/wIcon3.png) no-repeat;
+	background-position:-2px 0px;
+}
+.warningInfo .wMain{
+	width:100%;
+	height:89.2%;
+	/*border:1px solid yellow;*/
+	position:relative;
+	top:4px;
+	left:0px;
+	overflow:visible;
+}
+.warningInfo .wMain .realTime{
+	display:inline-block;
+	width:50%;
+	height:100%;
+	/*border:1px solid red;*/
+	background:url(../img/wMainLeft.png) no-repeat;
+	background-size:100%;
+	/*position:relative;
+	top:0px;
+	left:0px;*/
+	float:left;
+}
+.warningInfo .wMain .realTime .realTimeList{
+	width:80%;
+	height:70%;
+	/*width: 596px;*/
+	/*height:450px;*/
+	border:1px solid lightcoral;
+	position:relative;
+	top:8%;
+	/*left:5%;*/
+	
+}
+@media screen and (max-width: 1100) {
+	.realTimeList{
+		width:360px;
+		height:400px;
+	}
+}
+
+.realTimeList li{
+	width:100%;
+	height:46px;
+	color:#fff;
+	/*text-align:center;*/
+	line-height:46px;
+	border:1px solid crimson;
+	border:double black 3px;
+	-webkit-border-image:url(../img/warningSeparate.png) 4;
+	border-top:none;
+}
+.realTimeList li span{
+	padding:0px 25px;
+}
+
+.warningInfo .wMain .history{
+	/*display:inline-block;*/
+	width:50%;
+	height:100%;
+	/*border:1px solid green;*/
+	background:url(../img/wMainRight.png) no-repeat;
+	background-size:100%;
+	float:left;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+/*.history .historyNav{
+	width:97%;
+	height:40px;
+	vertical-align:middle;
+	background:rgb(6,90,132);
+	border:1px solid red;
+	position:relative;
+	top:6%;;
+	left:3%;
+	padding:0px 6%;
+	color:rgb(131,196,228);
+	font-family:"黑体";
+	font-size:1.1em;
+}
+.history .historyNav span{
+	display:inline-block;
+	height:40px;
+	vertical-align:middle;
+	line-height:40px;
+	text-align:center;
+	border:1px solid red;
+	padding:0px 11%;
+	
+}*/
+.history table{
+	width: 96.5%; 
+	font-size:1em;
+	color:#fff;
+	border-collapse:collapse;
+	text-align:center;
+	margin-left: 3.2%;
+	margin-top: 2.4%;
+
+}
+.history table tr{
+	height:46px;
+}
+.history table th{
+	padding: 8px 60px;
+	background-color:#00577F;
+	border-bottom: 1px solid #003F61;
+	
+}
+.history table td{
+	/*padding: 8px;*/
+	border-bottom: 1px solid #003F61;
+}
+.history .exchangePage{
+	width:96.5%;
+	height:48px;
+	line-height:48px;
+	background-color:rgb(19, 80, 109);
+	position:absolute;
+	/*top:45px;*/
+	left:3.2%;
+	bottom:8px;
+	/*padding-left:55%;*/
+	
+	/*position:absolute;
+	bottom:8px;
+	left:3.2%;*/
+	
+	/*margin-left: 3.2%;*/
+	/*margin-top: 2.4%;*/
+	vertical-align:middle;
+}
+.history .exchangePage .changePageMain{
+	float:right;
+}
+.history .exchangePage i{
+	display:inline-block;
+	
+}
+.history .exchangePage i.firstPage{
+	
+	width:21px;
+	height:15px;
+	background:url(../img/warningFront.png) no-repeat;
+	background-position-y:2px;
+}
+.history .exchangePage i.prevlPage{
+	
+	width:10px;
+	height:15px;
+	background:url(../img/warningLeft.png) no-repeat;
+	background-position-y:2px;
+}
+.history .exchangePage i.nextPage{
+	
+	width:10px;
+	height:15px;
+	background:url(../img/warningRight.png) no-repeat;
+	background-position-y:2px;
+}
+.history .exchangePage i.finallyPage{
+	
+	width:21px;
+	height:15px;
+	background:url(../img/warningLast.png) no-repeat;
+	background-position-y:2px;
+}
+.history span{
+	color:rgb(130,202,249);
+}
+.history a{
+	color:#fff;
+}

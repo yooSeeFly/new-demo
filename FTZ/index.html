@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>上海自贸区泵房远程监控系统</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<!--<link rel="stylesheet" href="css/warningInfo.css" />-->
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		
+		<div class="background">
+		
+			<div class="header">
+				
+				<!--<img src="images/title.png" width="100%" height="87px" />-->
+				<a  class="markTitle" href="index.html" target="_parent"></a>
+				<div class="exitBtn" onclick="window.close()" >
+					<!--<img src="images/			
+					exitBtn.png" width="22px" height="22px" />-->
+				</div>
+			
+				<!--<div class="nav">-->
+					<ul id="ul1" class="nav">
+						<li class="fun_1 fun" >
+							<a href="remoteControl.html" target="_parent"><i></i><h3>远程监控</h3></a>						
+						</li>
+						<li class="fun_2 fun" >
+							<a href="dataAnalysis.html" target="_parent"><i></i><h3>数据分析</h3></a>
+							
+						</li>
+						<li class="fun_3 fun">
+							<a href="warningInfo.html" target="_parent"><i></i><h3>报警信息</h3></a>
+						</li>
+						<li class="fun_4 fun"  > 
+							<a href="failureRecovery.html" target="_parent"><i></i><h3>故障巡检</h3></a>
+							
+						</li>
+						<li class="fun_5 fun">
+							<a href="basicSetup.html" target="_parent"><i></i><h3>基本设置</h3></a>						
+						</li>
+					</ul>
+				<!--</div>-->
+			</div>
+			<div class="Time">
+				
+				<div class="timeLineBlock">
+					
+					<ul class="timeContent">
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+							<div class="Date">
+								<p>2016-7-12</p><p>12:50</p>
+							<div>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+							<div class="Date">
+								<p>2016-7-12</p><p>12:50</p>
+							
+							</div>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+							<div class="Date">
+								<p>2016-7-12</p><p>12:50</p>
+							</div>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+							<div class="Date">
+								<p class="line1">2016-7-12</p><p>12:50</p>
+							</div>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+						</li>
+						<li>
+							<i></i><h4 class="timeDotTitle">时间点处的标题</h4>
+							<p class="timeDotContent">时间点处的简介</P>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			<!--<div class="timeLineExitBtn">-</div>-->
+			<!--时间轴打开和关闭按钮合并，统一使用时钟小图标-->
+			<div class="timeLineOpen"></div>
+			<!--泵房列表隐藏按钮-->
+			<div  class="rightBtn rlBtn" id="hideList" >&lt;</div>
+			<!--泵房列表展开按钮-->
+			<div class="leftBtn rlBtn" id="showList" >&gt;</div>
+		
+			<div class="pumpList" id="pumpList1">
+	
+				<div class="pumpListHeader">
+					<div class="diagSetBtn"></div>
+				</div>
+				<div class="pumpListBody">
+					<div class="userDataSet">
+						
+						<img class="userPicture" src="img/userPicture.jpg" />
+						<span class=" userName userData">用户名恢复</span>
+						<p>
+							<span class="userData">修改密码</span>
+							<a class="userData"  href="login.html">退出</a>						
+						</p>
+					</div>
+					<div class="changePsd">
+						<label>原始密码</label><input type="password" id="oldPassword" class="oldPsd psd" name="oldPassword"/></br>
+						<label>新改密码</label><input type="password" id="newPassword1" class="newPsd psd" name="newPassword1"/></br>
+						<label>确认密码</label><input type="password" id="newPassword2"class="ackPsd psd" name="newPassWord2"/></br>
+						<div class="btn">
+							<input   type="submit" class="ack" value="修改" /> </input>
+							<div class="cancel">取消</div>
+						</div>
+					</div>
+					<!--
+	                	作者：814068883@qq.com
+	                	时间：2016-07-14
+	                	描述：
+	                	按条件搜索模块
+	                -->
+	                <!--搜索模块-->
+					<div class="search">
+						
+							<select id="searchPumpList" name="searchPumpList">
+								<option value="0">名称</option>
+								<option value="1">编号</option>
+							</select >
+						<input type="text"  name="search" class="searchDiag" />
+							<i type= "button" class="searchBtn" ></i>
+						
+					</div>
+					
+					<div class="onlineStatus">
+						<ul>
+							<li><i class=" status blue"></i>全部（177）</li>
+							<li><i class="status green"></i>在线（78）</li>
+							<li><i class="status pink"></i>离线（56）</li>
+						</ul>
+					</div>
+					
+					<div class="List">
+						<ul>
+							<li class="List1 listItem online">
+								<i></i><h4>F21-1对话框</h4> <span>12345678874</span>
+							</li>
+							<li class="List2 listItem online">
+							<i>
+								</i><h4>F21-2对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List3 listItem offline">
+								<i></i><h4>F21-3对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List4 listItem online">
+								<i></i><h4>F21-4对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List5 listItem warning">
+								<i></i><h4>F21-5对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List6 listItem offline">
+								<i></i><h4>F21-6对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List7 listItem warning">
+								<i></i><h4>F21-7对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List8 listItem offline">
+								<i></i><h4>F21-8对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List9 listItem warning">
+								<i></i><h4>F21-9对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List10 listItem online">
+								<i></i><h4>F21-10对话框</h4>  <span>12345678874</span>
+							</li>
+							<li class="List11 listItem offline">
+								<i></i><h4>F21-11对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem online">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem  online">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem warning">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem offline">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem offline">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+							</li>
+							<li class="List12 listItem warning">
+								<i></i><h4>F21-12对话框 </h4> <span>12345678874</span>
+								
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+				<div class="pumpListFooter">
+	 
+				</div>
+			</div>				
+		</div>
+	</body>
+</html>
